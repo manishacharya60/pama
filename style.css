@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8dd8f8;
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 520px) {
+  html,
+  body {
+    /* don't know how to set default units to rem in mojs :(( */
+  }
+}
+
+.background {
+  background: #8dd8f8;
+  width: 100%;
+  height: 100vh;
+}
+
+.pama-container {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pama-container h1 {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Hachi Maru Pop", cursive;
+  color: #689fb8;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.pama {
+  padding: 0;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.pama .btn {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pama .btn {
+  background: #689fb8;
+  font-family: "Hachi Maru Pop", cursive;
+  padding: 5px;
+  letter-spacing: 0.1em;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  margin: 0.5em 0;
+}
+
+.pama .btn a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.pama img {
+  width: 100%;
+}
+
+@media (min-width: 200px) and (max-width: 650px) {
+  .pama {
+    width: 50%;
+  }
+
+  .pama-container h1 {
+    width: 100%;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "Hachi Maru Pop", cursive;
+    color: #689fb8;
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 0;
+  }
+}
+
+.container {
+  width: 50rem;
+  height: 20rem;
+  position: relative;
+}
+
+.svg-container {
+  z-index: 2;
+  position: absolute;
+}
+
+.mo-container {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.lttr {
+  fill: #763c8c;
+}
+
+.sound {
+  position: fixed;
+  color: #763c8c;
+  font-size: 1.6rem;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  cursor: default;
+}
+.sound--off {
+  text-decoration: line-through;
+}
