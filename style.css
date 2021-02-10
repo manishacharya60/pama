@@ -19,11 +19,15 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
-@media screen and (max-width: 520px) {
-  html,
-  body {
-    /* don't know how to set default units to rem in mojs :(( */
-  }
+
+.p-b {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .background {
@@ -41,11 +45,36 @@ body {
 }
 
 .pama-container h1 {
+  text-align: justify;
   width: 100%;
   font-weight: bolder;
   font-size: 35px;
   font-family: "Hachi Maru Pop", cursive;
   color: #689fb8;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.pama-container h3 {
+  text-align: justify;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Hachi Maru Pop", cursive;
+  color: #e57373;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.pama-container h4 {
+  text-align: justify;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Hachi Maru Pop", cursive;
+  color: #4a148c;
   text-align: center;
   margin-bottom: 20px;
   padding: 0;
@@ -82,6 +111,10 @@ body {
 }
 
 .pama img {
+  width: 100%;
+}
+
+.promise-box {
   width: 100%;
 }
 
