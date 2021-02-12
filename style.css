@@ -1,177 +1,153 @@
-@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dosis&family=Josefin+Sans:wght@300&display=swap");
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #8dd8f8;
-  font-size: 62.5%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
+.background {
+  width: 100%;
+  height: 100vh;
+  background: url(pama.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.p-b {
-  width: 100%;
+.background h1 {
+  text-align: center;
+  color: #fafafa;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  font-size: 1.5em;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.option-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.background {
-  background: #8dd8f8;
-  width: 100%;
-  height: 100vh;
+.option-box button {
+  width: 75%;
+  border-radius: 20px;
+  background: rgba(229, 57, 53, 0.7);
+  border: 3px solid #b71c1c;
+  outline: none;
+  font-family: balsamiq sans;
 }
 
-.pama-container {
-  width: 100%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.option-box button:hover {
+  background: #b71c1c;
+  outline: none;
 }
 
-.pama-container h1 {
-  text-align: justify;
-  width: 100%;
-  font-weight: bolder;
-  font-size: 35px;
-  font-family: "Hachi Maru Pop", cursive;
-  color: #689fb8;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-.pama-container h3 {
-  text-align: justify;
-  width: 100%;
-  font-weight: bolder;
-  font-size: 35px;
-  font-family: "Hachi Maru Pop", cursive;
-  color: #e57373;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-.pama-container h4 {
-  text-align: justify;
-  width: 100%;
-  font-weight: bolder;
-  font-size: 20px;
-  font-family: "Hachi Maru Pop", cursive;
-  color: #4a148c;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-.pama {
-  padding: 0;
-  display: block;
-  margin: auto;
-  width: 50%;
-}
-
-.pama .btn {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.pama .btn {
-  background: #689fb8;
-  font-family: "Hachi Maru Pop", cursive;
-  padding: 5px;
-  letter-spacing: 0.1em;
-  border-radius: 10px;
-  font-size: 20px;
-  border: none;
-  margin: 0.5em 0;
-}
-
-.pama .btn a {
+.option-box button a {
   color: #fafafa;
   text-decoration: none;
 }
 
-.pama img {
-  width: 100%;
+.option-box h4 {
+  font-weight: bolder;
+  font-family: josefin sans;
+  font-size: 2em;
+  color: #b71c1c;
 }
 
-.promise-box {
-  width: 100%;
-}
-
-@media (min-width: 200px) and (max-width: 650px) {
-  .pama {
-    width: 50%;
-  }
-
-  .pama-container h1 {
-    width: 100%;
-    font-weight: bolder;
-    font-size: 25px;
-    font-family: "Hachi Maru Pop", cursive;
-    color: #689fb8;
-    text-align: center;
-    margin-bottom: 2em;
-    padding: 0;
-  }
-}
-
-.container {
-  width: 50rem;
-  height: 20rem;
-  position: relative;
-}
-
-.svg-container {
-  z-index: 2;
-  position: absolute;
-}
-
-.mo-container {
+.background-message {
   width: 100%;
   height: 100%;
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #e2e2e2,
+    #c9d6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.line {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 8;
-  stroke-linecap: round;
-  stroke-miterlimit: 10;
+.background-message h1,
+.background-song h1,
+.background-pama h1 {
+  text-align: center;
+  color: #4a148c;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: josefin sans;
 }
 
-.lttr {
-  fill: #763c8c;
+.message-box {
+  margin: 1em;
+  padding: 20px;
+  background: rgba(74, 20, 140, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
 }
 
-.sound {
-  position: fixed;
-  color: #763c8c;
-  font-size: 1.6rem;
-  bottom: 1rem;
-  right: 1rem;
-  text-decoration: underline;
-  cursor: default;
+.message-box p {
+  color: #fafafa;
+  text-align: justify;
+  font-family: dosis;
 }
-.sound--off {
-  text-decoration: line-through;
+
+.background-song {
+  width: 100%;
+  height: 100vh;
+  background: #f4c4f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #fc67fa,
+    #f4c4f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #fc67fa,
+    #f4c4f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.background-song video {
+  width: 100%;
+}
+
+.background-pama {
+  width: 100%;
+  height: 100%;
+  background: #f4c4f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #fc67fa,
+    #f4c4f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #fc67fa,
+    #f4c4f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pama-img {
+  width: 100%;
+  background: #fafafa;
+}
+
+.pama-img img {
+  width: 100%;
+  border: 2px solid #4a148c;
 }
