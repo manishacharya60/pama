@@ -151,3 +151,24 @@
   width: 100%;
   border: 2px solid #4a148c;
 }
+
+audio {
+  display: block;
+  margin: auto;
+}
+
+.special h3 {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: josefin sans;
+  font-weight: bolder;
+  color: #b71c1c;
+}
+
+.special h4 {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: josefin sans;
+  font-weight: bolder;
+  color: #4a148c;
+}

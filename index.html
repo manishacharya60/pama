@@ -21,6 +21,7 @@
     <div class="background">
       <h1>HAPPY VALENTINE'S DAY!</h1>
       <h1>HAPPY FIRST ANNIVERSARY!</h1>
+      <h1><span id="seconds"></span> seconds of togetherness!</h1>
 
       <div class="option-box">
         <h4>Just For You!</h4>
@@ -67,5 +68,21 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <!-- counter -->
+    <script>
+      function get_uptime() {
+        var t1 = new Date(2020, 02, 14, 0, 0, 0, 0);
+        var t2 = new Date();
+        var dif = t2.getTime() - t1.getTime();
+
+        seconds = dif / 1000;
+        Seconds_Between_Dates = Math.trunc(seconds);
+        document.getElementById("seconds").innerHTML = Seconds_Between_Dates;
+        setTimeout(get_uptime, 1000);
+      }
+
+      get_uptime();
+    </script>
   </body>
 </html>
